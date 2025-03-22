@@ -18,7 +18,7 @@ const images: ImageData[] = [
     { src: image3 },
 ];
 
-export default function ImageSlider(): JSX.Element {
+export default function ImageSlider() {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     const [isHovered, setIsHovered] = useState<boolean>(false);
 
