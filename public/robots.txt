@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://karvi.vercel.app
+
+# Sitemaps
+Sitemap: https://karvi.vercel.app/sitemap.xml
