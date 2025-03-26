@@ -74,7 +74,7 @@ export default function Home() {
       <NewNav />
       {/* black ticker */}
 
-      <div className="ticker w-full py-3 bg-black text-center flex justify-between align-middle items-center px-4 md:px-10">
+      {/* <div className="ticker w-full py-3 bg-black text-center flex justify-between align-middle items-center px-4 md:px-10">
         <button
           onClick={prevOffer}
           className="hover:bg-gray-800 p-1 rounded-full transition-colors"
@@ -99,7 +99,7 @@ export default function Home() {
         >
           <MdArrowForward color="white" size={20} />
         </button>
-      </div>
+      </div> */}
 
       <Slider />
       <Image src={'/images/banner.jpg'} alt="10" width={1000} height={400} className="w-full" layout="responsive" />
