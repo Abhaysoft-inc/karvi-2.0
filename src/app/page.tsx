@@ -3,39 +3,12 @@
 import { useState, useEffect, useRef } from "react";
 import NewNav from "@/components/Navbar";
 import Slider from "@/components/Slider";
-import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import Image from "next/image";
 import Footer from "@/components/Footer"
 import { FaWhatsapp } from "react-icons/fa6";
 import Head from "next/head";
 
 export default function Home() {
-  const offers = [
-    "🚚 FREE SHIPPING on all Orders! | 📞 Need Assistance? Call at +91 9696745350",
-    "Special One Time Offer! Flat 5% OFF on Orders ₹5,000+ | Code: MAR5OFF"
-  ];
-
-  const [currentOfferIndex, setCurrentOfferIndex] = useState(0);
-
-  // Function to navigate to the next offer
-  const nextOffer = () => {
-    setCurrentOfferIndex((prevIndex) => (prevIndex + 1) % offers.length);
-  };
-
-  // Function to navigate to the previous offer
-  const prevOffer = () => {
-    setCurrentOfferIndex((prevIndex) => (prevIndex - 1 + offers.length) % offers.length);
-  };
-
-  // Auto-play functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextOffer();
-    }, 2000); // Change offer every 5 seconds
-
-    return () => clearInterval(interval);
-  });
-
 
 
   // floatingaction button code here
@@ -72,34 +45,7 @@ export default function Home() {
 
       </Head>
       <NewNav />
-      {/* black ticker */}
 
-      {/* <div className="ticker w-full py-3 bg-black text-center flex justify-between align-middle items-center px-4 md:px-10">
-        <button
-          onClick={prevOffer}
-          className="hover:bg-gray-800 p-1 rounded-full transition-colors"
-          aria-label="Previous offer"
-        >
-          <MdArrowBack color="white" size={20} />
-        </button>
-
-        <div className="overflow-hidden mx-2 md:mx-4 flex-1">
-          <p
-            className="text-white text-sm md:text-base text-center transition-opacity duration-300 animate-fadeIn"
-            key={currentOfferIndex} // Key helps React identify when to animate
-          >
-            {offers[currentOfferIndex]}
-          </p>
-        </div>
-
-        <button
-          onClick={nextOffer}
-          className="hover:bg-gray-800 p-1 rounded-full transition-colors"
-          aria-label="Next offer"
-        >
-          <MdArrowForward color="white" size={20} />
-        </button>
-      </div> */}
 
       <Slider />
       <Image src={'/images/banner.jpg'} alt="10" width={1000} height={400} className="w-full" layout="responsive" />
