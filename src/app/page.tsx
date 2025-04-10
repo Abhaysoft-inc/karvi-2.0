@@ -1,7 +1,6 @@
 "use client";
 
 import NewNav from "@/components/Navbar";
-import Slider from "@/components/Slider";
 import Image from "next/image";
 import Footer from "@/components/Footer"
 import FAB from "@/components/FAB";
