@@ -21,19 +21,19 @@ function NewNav() {
 
             {/* top menu */}
 
-            <div className="tpmnu hidden lg:flex md:flex justify-between text-sm font-[400] font-Poppins bg-[#f8f9fa] items-center py-1">
+            <div className="tpmnu hidden lg:flex md:flex justify-between text-[12px] font-[400] font-Poppins bg-[#f8f9fa] items-center py-.5 align-middle">
                 <ul className="ml-10">
 
-                    <Link className="brand p-[.5rem] flex " href={'/franchise'}> <FaStore size={21} className='mr-2' />Franchise</Link>
+                    <Link className="brand p-[.5rem] flex " href={'/franchise'}> <FaStore size={16} className='mr-2' />Franchise</Link>
 
 
                 </ul>
 
                 <ul className="flex space-x-5 mr-16 items-center">
-                    <Link className="p-[.5rem] text-violet-900 flex" href={'/locate-store'}><FaLocationDot size={18} className='mr-2' /> Store Locator</Link>
+                    <Link className="p-[.5rem] text-violet-900 flex" href={'/locate-store'}><FaLocationDot size={16} className='mr-2' /> Store Locator</Link>
                     <Link href={''} className="p-[.5rem]">Sample Kit</Link>
-                    {/* <Link href={''} className="h-full bg-orange-600 p-[.5rem] text-white">Business Solutions</Link> */}<Link className="flex items-center" href={'/help'}><PiSealQuestionFill size={24} className='mr-2' /> Help Center</Link>
-                    <Link href={'/login'} className="flex items-center"><RiUser5Fill size={24} className='mr-2' /> Login / Signup</Link>
+                    {/* <Link href={''} className="h-full bg-orange-600 p-[.5rem] text-white">Business Solutions</Link> */}<Link className="flex items-center" href={'/help'}><PiSealQuestionFill size={16} className='mr-2' /> Help Center</Link>
+                    <Link href={'/login'} className="flex items-center"><RiUser5Fill size={16} className='mr-2' /> Login / Signup</Link>
 
 
                 </ul>
@@ -43,7 +43,7 @@ function NewNav() {
             {/* pc lower menu */}
 
 
-            <div className="hidden lowermnu  lg:flex md:flex px-3 py-4 justify-between bg-white shadow-none z-10">
+            <div className="hidden lowermnu  lg:flex md:flex px-3 py-2 justify-between bg-white shadow-none z-10 items-center">
 
                 <div className="flex items-center align-middle py-1">
                     <Link href={"/"}>
@@ -51,11 +51,20 @@ function NewNav() {
                     </Link>
                     <Link className="my-2 ml-3 text-xl font-[700] font-[cambria]" href={'/'}>Karvi Printing Press</Link>
                     {/* Search box */}
-                    <form action="" className="relative ml-10">
+                    {/* <form action="" className="relative ml-10">
                         <IoMdSearch className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400 items-center" size={22} />
                         <input
                             type="text"
                             className="border my-1.5 rounded-md py-3 pl-10 pr-3 border-slate-400 w-[625px]"
+                            placeholder="Search"
+                        />
+                    </form> */}
+
+                    <form action="" className="relative ml-10">
+                        <IoMdSearch className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400 items-center" size={22} />
+                        <input
+                            type="text"
+                            className="border my-1.5 py-1.5 pl-10 pr-3 border-black w-[625px] bg-white transform skew-x-[-10deg] rounded-md"
                             placeholder="Search"
                         />
                     </form>
