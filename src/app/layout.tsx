@@ -13,10 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+
+
   title: "Karvi Printing Press - Best Printing Press in Gorakhpur",
   description: "High-quality, affordable printing for businesses & individuals. Brochures, flyers, business cards & more. Fast turnaround, free quotes. Call now!",
   robots: "index, follow",
-  keywords: "printing press in gorakhpur, best printing press, Printing press in gorakhpur price, Offset printing press in gorakhpur, Best printing press in gorakhpur, Printing press in gorakhpur for sale, Printing Press near me, Gita Press Gorakhpur books online purchase,Photocopy shop near me, karvi printing press"
+  keywords: "printing press in gorakhpur, best printing press, Printing press in gorakhpur price, Offset printing press in gorakhpur, Best printing press in gorakhpur, Printing press in gorakhpur for sale, Printing Press near me, Gita Press Gorakhpur books online purchase,Photocopy shop near me, karvi printing press",
+
 };
 
 export default function RootLayout({
@@ -26,6 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="5Wk6tUlzqj0Zbpw3pw6n2IyJcTQIKVjgnU5EKUFv5TU" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
